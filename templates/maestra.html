@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Flask + MySQL - {% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-warning" role="navigation">
+        <div class="navbar-brand">
+            <a href="{{url_for('juegos')}}" class="navbar-item">🎮 CRUD Juegos</a>
+        </div>
+    </nav>
+    <section class="section">
+        {% block contenido %}{% endblock %}
+    </section>
+</body>
+</html>
