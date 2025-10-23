@@ -1,0 +1,41 @@
+### Obtener todos los juegos
+GET http://127.0.0.1:5000/api/juegos
+Content-Type: application/json
+
+###
+
+### Obtener un juego por ID (ejemplo: 1)
+GET http://127.0.0.1:5000/api/juegos/1
+Content-Type: application/json
+
+###
+
+### Crear un nuevo juego
+POST http://127.0.0.1:5000/api/juegos
+Content-Type: application/json
+
+{
+  "nombre": "Sonic",
+  "categoria": "Plataformas",
+  "plataforma": "PC",
+  "precio": 49.99
+}
+
+###
+
+### Actualizar un juego (ejemplo: ID 1)
+PUT http://127.0.0.1:5000/api/juegos/1
+Content-Type: application/json
+
+{
+  "nombre": "Zelda TOTK (Edición Actualizada)",
+  "categoria": "Aventura",
+  "plataforma": "Switch",
+  "precio": 1399.00
+}
+
+###
+
+### Eliminar un juego (ejemplo: ID 1)
+DELETE http://127.0.0.1:5000/api/juegos/1
+Content-Type: application/json
